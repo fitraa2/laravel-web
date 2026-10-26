@@ -4,7 +4,10 @@ use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\MatakuliahController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuestionController;
+//p6p5
 use App\Http\Controllers\DashboardController;
+//p7p6
+use App\Http\Controllers\PelangganController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -44,8 +47,12 @@ Route::get('/home', [HomeController::class, 'index']);
 Route::post('question/store', [QuestionController::class, 'store'])
 		->name('question.store');
 
+//p6p5
 Route::get('dashboard', [DashboardController::class, 'index'])
         ->name('dashboard');
+
+//p7p6r
+Route::resource('pelanggan', PelangganController::class);
 
 Route::get('/about', function () {
     return view('halaman-about');
