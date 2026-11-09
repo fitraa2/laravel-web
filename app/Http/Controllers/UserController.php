@@ -11,9 +11,10 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(){
-            $data['users'] = User::all();
-            return view('admin.user.index',$data);
+    public function index()
+    {
+        $data['dataUser'] = User::all();
+        return view('admin.user.index', $data);
     }
 
     /**
@@ -29,14 +30,20 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        // Menggabungkan first_name dan last_name menjadi kolom 'name' bawaan tabel users
-        $data['name'] = $request->first_name . ' ' . $request->last_name;
-		$data['email'] = $request->email;
-        $data['password'] = Hash::make('password123');
+        // Validasi agar sistem otomatis menolak jika email sudah terdaftar
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string',
+        ]);
 
-		User::create($data);
+        $data['name'] = $request->name;
+        $data['email'] = $request->email;
+        $data['password'] = Hash::make($request->password);
 
-		return redirect()->route('user.index')->with('success','Penambahan Data Berhasil!');
+        User::create($data);
+
+        return redirect()->route('user.index')->with('success', 'Penambahan Data Berhasil!');
     }
 
     /**
@@ -63,12 +70,21 @@ class UserController extends Controller
     {
         $user = User::findOrFail($id);
 
-        // Menyesuaikan pengubahan data dengan kolom tabel users bawaan
-        $user->name = $request->first_name . ' ' . $request->last_name;
+        // Validasi saat update data (mengabaikan keunikan email milik user itu sendiri)
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users,email,' . $user->id,
+        ]);
+
+        $user->name = $request->name;
         $user->email = $request->email;
 
+        if ($request->filled('password')) {
+            $user->password = Hash::make($request->password);
+        }
+
         $user->save();
-        return redirect()->route('user.index')->with('success', 'User berhasil ditambahkan');
+        return redirect()->route('user.index')->with('success', 'User berhasil diperbarui');
     }
 
     /**

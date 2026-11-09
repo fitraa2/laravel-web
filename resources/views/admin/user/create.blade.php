@@ -8,7 +8,7 @@
                 <li class="breadcrumb-item">
                     <a href="#">
                         <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
+                            xmlns="http://w3.org">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
                             </path>
@@ -22,10 +22,11 @@
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
                 <h1 class="h4">Tambah User</h1>
-                <p class="mb-0">Form untuk menambahkan data User baru.</p>
+                <p class="mb-0">Form untuk menambahkan data user baru.</p>
             </div>
             <div>
-                <a href="" class="btn btn-primary"><i class="far fa-question-circle me-1"></i> Kembali</a>
+                <!-- Mengubah btn-dark menjadi btn-gray-800 agar warna tombol Kembali muncul -->
+                <a href="{{ route('user.index') }}" class="btn btn-gray-800">Kembali</a>
             </div>
         </div>
     </div>
@@ -36,64 +37,55 @@
                 <div class="card-body">
                     <form action="{{ route('user.store') }}" method="POST">
                         @csrf
-                        <div class="row mb-4">
-                            <div class="col-lg-4 col-sm-6">
-                                <!-- First Name -->
-                                <div class="mb-3">
-                                    <label for="first_name" class="form-label">First name</label>
-                                    <input type="text" id="first_name" class="form-control" name="first_name" required>
-                                </div>
 
-                                <!-- Last Name -->
-                                <div class="mb-3">
-                                    <label for="last_name" class="form-label">Last name</label>
-                                    <input type="text" id="last_name" class="form-control" name="last_name" required>
-                                </div>
+                        @if ($errors->any())
+                            <div class="alert alert-danger p-2 mb-3 rounded" style="color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb;">
+                                <ul class="mb-0">
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
                             </div>
+                        @endif
 
-                            <div class="col-lg-4 col-sm-6">
-                                <!-- Birthday -->
+                        {{-- TATA LETAK FORM 2 KOLOM UTAMA --}}
+                        <div class="row mb-3">
+                            <!-- KOLOM KIRI (Name & Email) -->
+                            <div class="col-lg-6 col-sm-12">
                                 <div class="mb-3">
-                                    <label for="birthday" class="form-label">Birthday</label>
-                                    <input type="date" id="birthday" class="form-control" name="birthday">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" id="name" class="form-control" name="name" value="{{ old('name') }}" required>
                                 </div>
-
-                                <!-- Gender -->
-                                <div class="mb-3">
-                                    <label for="gender" class="form-label">Gender</label>
-                                    <select id="gender" name="gender" class="form-select">
-                                        <option value="">-- Pilih --</option>
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
-                                        <option value="Other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-sm-12">
-                                <!-- Email -->
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="text" id="email" class="form-control" name="email" required>
+                                    <input type="email" id="email" class="form-control" name="email" value="{{ old('email') }}" required>
                                 </div>
+                            </div>
 
-                                <!-- Phone -->
+                            <!-- KOLOM KANAN (Password & Confirm Password) -->
+                            <div class="col-lg-6 col-sm-12">
                                 <div class="mb-3">
-                                    <label for="phone" class="form-label">Phone</label>
-                                    <input type="text" id="phone" class="form-control" name="phone">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" id="password" class="form-control" name="password" required>
                                 </div>
-
-                                <!-- Buttons -->
-                                <div class="">
-                                    <button type="submit" class="btn btn-primary" name="save">Simpan</button>
-                                    <a href="{{ route('user.index') }}"
-                                        class="btn btn-outline-secondary ms-2">Batal</a>
+                                <div class="mb-3">
+                                    <label for="password_confirmation" class="form-label">Confirm Password</label>
+                                    <input type="password" id="password_confirmation" class="form-control" name="password_confirmation" required>
                                 </div>
                             </div>
                         </div>
+
+                        {{-- TOMBOL DI BAGIAN BAWAH TENGAH --}}
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <!-- Mengubah btn-dark menjadi btn-gray-800 agar warna tombol Simpan muncul -->
+                                <button type="submit" class="btn btn-gray-800" name="save">Simpan</button>
+                                <a href="{{ route('user.index') }}" class="btn btn-outline-gray-500 ms-2">Batal</a>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
