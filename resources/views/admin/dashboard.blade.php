@@ -1,23 +1,5 @@
-<!--
-
-=========================================================
-* Volt Free - Bootstrap 5 Dashboard
-=========================================================
-
-* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
-* Copyright 2021 Themesberg (https://www.themesberg.com)
-* License (https://themesberg.com/licensing)
-
-* Designed and coded by https://themesberg.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
-
--->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Primary Meta Tags -->
@@ -25,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title" content="Volt - Free Bootstrap 5 Dashboard">
     <meta name="author" content="Themesberg">
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="120x120"
         href="{{ asset('assets-admin/img/favicon/apple-touch-icon.png"') }}>
@@ -69,7 +50,7 @@
                 <div class="d-flex align-items-center">
                     <div class="avatar-lg me-4">
                         <img src="{{ asset('assets-admin/img/team/profile-picture-3.jpg') }}"
-                            class="card-img-top rounded-circle border-white" alt="Bonnie Green">
+                            class="card-img-top rounded-circle border-white" alt="Fitra Azzikri">
                     </div>
                     <div class="d-block">
                         <h2 class="h5 mb-3">Hi, Jane</h2>
@@ -119,6 +100,34 @@
                         <span class="sidebar-text">Dashboard</span>
                     </a>
                 </li>
+                <li class="nav-item {{ request()->routeIs('pelanggan.*') ? 'active' : '' }}">
+                    <a href="{{ route('pelanggan.index') }}" class="nav-link">
+                        <span class="sidebar-icon">
+                            <svg class="icon icon-xs me-2" data-slot="icon" fill="none"
+                                stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="sidebar-text">Pelanggan</span>
+                    </a>
+                </li>
+                <li class="nav-item {{ request()->routeIs('user.*') ? 'active' : '' }}">
+                    <a href="{{ route('user.index') }}" class="nav-link">
+                        <span class="sidebar-icon">
+                            <svg class="icon icon-xs me-2" data-slot="icon" fill="none"
+                                stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="sidebar-text">User</span>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <span class="nav-link  collapsed  d-flex justify-content-between align-items-center"
                         data-bs-toggle="collapse" data-bs-target="#submenu-app">
@@ -131,7 +140,7 @@
                                         clip-rule="evenodd"></path>
                                 </svg>
                             </span>
-                            <span class="sidebar-text">Tables</span>
+                            <span class="sidebar-text">Tabel</span>
                         </span>
                         <span class="link-arrow">
                             <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
@@ -165,7 +174,7 @@
                                     clip-rule="evenodd"></path>
                             </svg>
                         </span>
-                        <span class="sidebar-text">Documentation <span
+                        <span class="sidebar-text">Dokumentasi <span
                                 class="badge badge-sm bg-secondary ms-1 text-gray-800">v1.4</span></span>
                     </a>
                 </li>
@@ -180,7 +189,7 @@
                                     clip-rule="evenodd"></path>
                             </svg>
                         </span>
-                        <span>Upgrade to Pro</span>
+                        <span>Beralih ke versi pro</span>
                     </a>
                 </li>
             </ul>
@@ -227,7 +236,7 @@
                             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-center mt-2 py-0">
                                 <div class="list-group list-group-flush">
                                     <a href="#"
-                                        class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
+                                        class="text-center text-primary fw-bold border-bottom border-light py-3">Notifikasi</a>
                                     <a href="#" class="list-group-item list-group-item-action border-bottom">
                                         <div class="row align-items-center">
                                             <div class="col-auto">
@@ -239,7 +248,7 @@
                                             <div class="col ps-0 ms-2">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div>
-                                                        <h4 class="h6 mb-0 text-small">Jose Leos</h4>
+                                                        <h4 class="h6 mb-0 text-small">Rakha Adhwa Zayyan</h4>
                                                     </div>
                                                     <div class="text-end">
                                                         <small class="text-danger">a few moments ago</small>
@@ -263,7 +272,7 @@
                                             <div class="col ps-0 ms-2">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div>
-                                                        <h4 class="h6 mb-0 text-small">Neil Sims</h4>
+                                                        <h4 class="h6 mb-0 text-small">Muhammad Rafly Zahran</h4>
                                                     </div>
                                                     <div class="text-end">
                                                         <small class="text-danger">2 hrs ago</small>
@@ -283,7 +292,7 @@
                                                 d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
-                                        View all
+                                        Tampilkan semua
                                     </a>
                                 </div>
                             </div>
@@ -295,7 +304,7 @@
                                     <img class="avatar rounded-circle" alt="Image placeholder"
                                         src="{{ asset('assets-admin/img/team/profile-picture-3.jpg') }}">
                                     <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
-                                        <span class="mb-0 font-small fw-bold text-gray-900">Bonnie Green</span>
+                                        <span class="mb-0 font-small fw-bold text-gray-900">Fitra Azzikri</span>
                                     </div>
                                 </div>
                             </a>
@@ -307,7 +316,7 @@
                                             d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    My Profile
+                                    Profil Ku
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor"
@@ -316,7 +325,7 @@
                                             d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    Settings
+                                    Pengaturan
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor"
@@ -325,7 +334,7 @@
                                             d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    Messages
+                                    Pesan
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor"
@@ -334,7 +343,7 @@
                                             d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    Support
+                                    Dukungan
                                 </a>
                                 <div role="separator" class="dropdown-divider my-1"></div>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -344,7 +353,7 @@
                                             d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
                                         </path>
                                     </svg>
-                                    Logout
+                                    Keluar
                                 </a>
                             </div>
                         </li>
@@ -362,7 +371,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                     </svg>
-                    New Task
+                    Tugas Baru
                 </button>
                 <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -372,7 +381,7 @@
                                 d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z">
                             </path>
                         </svg>
-                        Add User
+                        Tambahkan User
                     </a>
                     <a class="dropdown-item d-flex align-items-center" href="#">
                         <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
@@ -381,7 +390,7 @@
                                 d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z">
                             </path>
                         </svg>
-                        Add Widget
+                        Tambahkan Widget
                     </a>
                     <a class="dropdown-item d-flex align-items-center" href="#">
                         <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
@@ -400,7 +409,7 @@
                                 d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                 clip-rule="evenodd"></path>
                         </svg>
-                        Preview Security
+                        Pratinjau Keamanan
                     </a>
                     <div role="separator" class="dropdown-divider my-1"></div>
                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -410,7 +419,7 @@
                                 d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
                                 clip-rule="evenodd"></path>
                         </svg>
-                        Upgrade to Pro
+                        Beralih ke versi pro
                     </a>
                 </div>
             </div>
@@ -424,10 +433,10 @@
                             <div class="card-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h2 class="fs-5 fw-bold mb-0">Page visits</h2>
+                                        <h2 class="fs-5 fw-bold mb-0">Halaman pengunjung</h2>
                                     </div>
                                     <div class="col text-end">
-                                        <a href="#" class="btn btn-sm btn-primary">See all</a>
+                                        <a href="#" class="btn btn-sm btn-primary">Lihat semua</a>
                                     </div>
                                 </div>
                             </div>
@@ -435,9 +444,9 @@
                                 <table class="table align-items-center table-flush">
                                     <thead class="thead-light">
                                         <tr>
-                                            <th class="border-bottom" scope="col">Page name</th>
-                                            <th class="border-bottom" scope="col">Page Views</th>
-                                            <th class="border-bottom" scope="col">Page Value</th>
+                                            <th class="border-bottom" scope="col">Halaman nama</th>
+                                            <th class="border-bottom" scope="col">Halaman Views</th>
+                                            <th class="border-bottom" scope="col">Halaman Nilai</th>
                                             <th class="border-bottom" scope="col">Bounce rate</th>
                                         </tr>
                                     </thead>
@@ -561,7 +570,7 @@
                         <div class="card border-0 shadow">
                             <div class="card-header border-bottom d-flex align-items-center justify-content-between">
                                 <h2 class="fs-5 fw-bold mb-0">Team members</h2>
-                                <a href="#" class="btn btn-sm btn-primary">See all</a>
+                                <a href="#" class="btn btn-sm btn-primary">Lihat semua</a>
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush list my--3">
@@ -576,7 +585,7 @@
                                             </div>
                                             <div class="col-auto ms--2">
                                                 <h4 class="h6 mb-0">
-                                                    <a href="#">Chris Wood</a>
+                                                    <a href="#">Rakha Adhwa Zayyan</a>
                                                 </h4>
                                                 <div class="d-flex align-items-center">
                                                     <div class="bg-success dot rounded-circle me-1"></div>
@@ -592,7 +601,7 @@
                                                             d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
                                                             clip-rule="evenodd"></path>
                                                     </svg>
-                                                    Invite
+                                                    Undang
                                                 </a>
                                             </div>
                                         </div>
@@ -608,7 +617,7 @@
                                             </div>
                                             <div class="col-auto ms--2">
                                                 <h4 class="h6 mb-0">
-                                                    <a href="#">Jose Leos</a>
+                                                    <a href="#">Muhammad Rafly Zahran</a>
                                                 </h4>
                                                 <div class="d-flex align-items-center">
                                                     <div class="bg-warning dot rounded-circle me-1"></div>
@@ -624,7 +633,7 @@
                                                             d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
                                                             clip-rule="evenodd"></path>
                                                     </svg>
-                                                    Message
+                                                    Pesan
                                                 </a>
                                             </div>
                                         </div>
@@ -640,7 +649,7 @@
                                             </div>
                                             <div class="col-auto ms--2">
                                                 <h4 class="h6 mb-0">
-                                                    <a href="#">Bonnie Green</a>
+                                                    <a href="#">Fitra Azzikri</a>
                                                 </h4>
                                                 <div class="d-flex align-items-center">
                                                     <div class="bg-danger dot rounded-circle me-1"></div>
@@ -656,7 +665,7 @@
                                                             d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
                                                             clip-rule="evenodd"></path>
                                                     </svg>
-                                                    Message
+                                                    Pesan
                                                 </a>
                                             </div>
                                         </div>
@@ -672,7 +681,7 @@
                                             </div>
                                             <div class="col-auto ms--2">
                                                 <h4 class="h6 mb-0">
-                                                    <a href="#">Neil Sims</a>
+                                                    <a href="#">Wahyu Lian Saputra</a>
                                                 </h4>
                                                 <div class="d-flex align-items-center">
                                                     <div class="bg-danger dot rounded-circle me-1"></div>
@@ -688,7 +697,7 @@
                                                             d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
                                                             clip-rule="evenodd"></path>
                                                     </svg>
-                                                    Message
+                                                    Pesan
                                                 </a>
                                             </div>
                                         </div>
@@ -701,7 +710,7 @@
                         <div class="card border-0 shadow">
                             <div class="card-header border-bottom d-flex align-items-center justify-content-between">
                                 <h2 class="fs-5 fw-bold mb-0">Progress track</h2>
-                                <a href="#" class="btn btn-sm btn-primary">See tasks</a>
+                                <a href="#" class="btn btn-sm btn-primary">Lihat tugas</a>
                             </div>
                             <div class="card-body">
                                 <!-- Project 1 -->
@@ -819,7 +828,7 @@
                         <div class="card-body pb-5">
                             <img src="{{ asset('assets-admin/img/team/profile-picture-1.jpg') }}"
                                 class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
-                            <h4 class="h3">Neil Sims</h4>
+                            <h4 class="h3">Rakha Adhwa Zayyan</h4>
                             <h5 class="fw-normal">Senior Software Engineer</h5>
                             <p class="text-gray mb-4">New York, USA</p>
                             <a class="btn btn-sm btn-gray-800 d-inline-flex align-items-center me-2" href="#">
@@ -829,9 +838,9 @@
                                         d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z">
                                     </path>
                                 </svg>
-                                Connect
+                                Terhubung
                             </a>
-                            <a class="btn btn-sm btn-secondary" href="#">Send Message</a>
+                            <a class="btn btn-sm btn-secondary" href="#">Kirimkan pesan</a>
                         </div>
                     </div>
                 </div>
@@ -980,7 +989,7 @@
         <footer class="bg-white rounded shadow p-5 mb-4 mt-4">
             <div class="row">
                 <div class="col-12 col-md-4 col-xl-6 mb-4 mb-md-0">
-                    <p class="mb-0 text-center text-lg-start">© 2019-<span class="current-year"></span> <a
+                    <p class="mb-0 text-center text-lg-start">© 2026-<span class="current-year"></span> <a
                             class="text-primary fw-normal" href="https://themesberg.com"
                             target="_blank">Themesberg</a>
                     </p>
@@ -989,16 +998,16 @@
                     <!-- List -->
                     <ul class="list-inline list-group-flush list-group-borderless text-md-end mb-0">
                         <li class="list-inline-item px-0 px-sm-2">
-                            <a href="https://themesberg.com/about">About</a>
+                            <a href="https://themesberg.com/about">Tentang</a>
                         </li>
                         <li class="list-inline-item px-0 px-sm-2">
-                            <a href="https://themesberg.com/themes">Themes</a>
+                            <a href="https://themesberg.com/themes">Tema</a>
                         </li>
                         <li class="list-inline-item px-0 px-sm-2">
                             <a href="https://themesberg.com/blog">Blog</a>
                         </li>
                         <li class="list-inline-item px-0 px-sm-2">
-                            <a href="https://themesberg.com/contact">Contact</a>
+                            <a href="https://themesberg.com/contact">Kontak</a>
                         </li>
                     </ul>
                 </div>

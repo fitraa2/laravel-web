@@ -1,7 +1,6 @@
 @extends('layouts.admin.app')
 
 @section('content')
-    {{-- Start Main Content --}}
     <div class="py-4">
         <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
             <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
@@ -25,7 +24,6 @@
                 <p class="mb-0">Form untuk menambahkan data user baru.</p>
             </div>
             <div>
-                <!-- Mengubah btn-dark menjadi btn-gray-800 agar warna tombol Kembali muncul -->
                 <a href="{{ route('user.index') }}" class="btn btn-gray-800">Kembali</a>
             </div>
         </div>
@@ -48,9 +46,7 @@
                             </div>
                         @endif
 
-                        {{-- TATA LETAK FORM 2 KOLOM UTAMA --}}
                         <div class="row mb-3">
-                            <!-- KOLOM KIRI (Name & Email) -->
                             <div class="col-lg-6 col-sm-12">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Name</label>
@@ -62,7 +58,6 @@
                                 </div>
                             </div>
 
-                            <!-- KOLOM KANAN (Password & Confirm Password) -->
                             <div class="col-lg-6 col-sm-12">
                                 <div class="mb-3">
                                     <label for="password" class="form-label">Password</label>
@@ -75,10 +70,8 @@
                             </div>
                         </div>
 
-                        {{-- TOMBOL DI BAGIAN BAWAH TENGAH --}}
                         <div class="row">
-                            <div class="col-12 text-center">
-                                <!-- Mengubah btn-dark menjadi btn-gray-800 agar warna tombol Simpan muncul -->
+                            <div class="col-12 text-end">
                                 <button type="submit" class="btn btn-gray-800" name="save">Simpan</button>
                                 <a href="{{ route('user.index') }}" class="btn btn-outline-gray-500 ms-2">Batal</a>
                             </div>
@@ -89,5 +82,4 @@
             </div>
         </div>
     </div>
-    {{-- End Main Content --}}
 @endsection

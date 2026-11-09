@@ -18,7 +18,7 @@
             <div class="d-flex align-items-center">
                 <div class="avatar-lg me-4">
                     <img src="{{ asset('assets-admin/img/team/profile-picture-3.jpg') }}"
-                        class="card-img-top rounded-circle border-white" alt="Bonnie Green">
+                        class="card-img-top rounded-circle border-white" alt="Fitra Azzikri">
                 </div>
                 <div class="d-block">
                     <h2 class="h5 mb-3">Hi, Jane</h2>
@@ -110,7 +110,7 @@
                                 clip-rule="evenodd"></path>
                         </svg>
                     </span>
-                    <span class="sidebar-text">Documentation <span
+                    <span class="sidebar-text">Dokumentasi <span
                             class="badge badge-sm bg-secondary ms-1 text-gray-800">v1.4</span></span>
                 </a>
             </li>
@@ -125,7 +125,7 @@
                                 clip-rule="evenodd"></path>
                         </svg>
                     </span>
-                    <span>Upgrade to Pro</span>
+                    <span>Beralih ke versi pro</span>
                 </a>
             </li>
         </ul>

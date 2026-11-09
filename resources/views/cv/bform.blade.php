@@ -31,7 +31,7 @@
                 </nav>
             </div>
             <button class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold py-2.5 px-4 rounded-lg flex items-center justify-center gap-2 text-sm transition">
-                <i class="fa-solid fa-crown text-xs"></i> Upgrade to Pro
+                <i class="fa-solid fa-crown text-xs"></i> Beralih ke versi pro
             </button>
         </aside>
 
@@ -80,7 +80,7 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div class="space-y-1">
                                     <label class="text-xs font-bold text-gray-700">Nama Lengkap</label>
-                                    <input type="text" name="nama_lengkap" placeholder="Contoh: Neil Sims" value="{{ old('nama_lengkap') }}" required
+                                    <input type="text" name="nama_lengkap" placeholder="Contoh: Muhammad Rafly Zahran" value="{{ old('nama_lengkap') }}" required
                                         class="w-full text-xs p-2.5 bg-gray-50 border border-gray-300 rounded-lg focus:ring-1 focus:ring-indigo-500 focus:bg-white outline-none transition">
                                 </div>
 

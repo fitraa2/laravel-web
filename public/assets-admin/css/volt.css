@@ -454,11 +454,11 @@
 }
 
 .ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut {
-    stroke: #F8BD7A;
+    stroke: #05A3F6;
 }
 
 .ct-series-b .ct-slice-pie, .ct-series-b .ct-slice-donut-solid, .ct-series-b .ct-area {
-    fill: #F8BD7A;
+    fill: #05A3F6;
 }
 
 .ct-series-c .ct-point, .ct-series-c .ct-line, .ct-series-c .ct-bar, .ct-series-c .ct-slice-donut {
@@ -494,11 +494,11 @@
 }
 
 .ct-series-g .ct-point, .ct-series-g .ct-line, .ct-series-g .ct-bar, .ct-series-g .ct-slice-donut {
-    stroke: #F8BD7A;
+    stroke: #05A3F6;
 }
 
 .ct-series-g .ct-slice-pie, .ct-series-g .ct-slice-donut-solid, .ct-series-g .ct-area {
-    fill: #F8BD7A;
+    fill: #05A3F6;
 }
 
 .ct-square {
@@ -1001,7 +1001,7 @@
     --bs-gray-800: #1F2937;
     --bs-gray-900: #111827;
     --bs-primary: #1F2937;
-    --bs-secondary: #f0bc74;
+    --bs-secondary: #05A3F6;
     --bs-tertiary: #31316A;
     --bs-success: #10B981;
     --bs-info: #2361ce;
@@ -4781,8 +4781,8 @@ textarea.form-control-lg {
 
 .btn-secondary {
     color: #1F2937;
-    background-color: #f0bc74;
-    border-color: #f0bc74;
+    background-color: #05A3F6;
+    border-color: #05A3F6;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(17, 24, 39, 0.075);
 }
 
@@ -4811,8 +4811,8 @@ textarea.form-control-lg {
 
 .btn-secondary:disabled, .btn-secondary.disabled {
     color: #1F2937;
-    background-color: #f0bc74;
-    border-color: #f0bc74;
+    background-color: #05A3F6;
+    border-color: #05A3F6;
 }
 
 .btn-tertiary {
@@ -5566,14 +5566,14 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-    color: #f0bc74;
-    border-color: #f0bc74;
+    color: #05A3F6;
+    border-color: #05A3F6;
 }
 
 .btn-outline-secondary:hover {
     color: #1F2937;
-    background-color: #f0bc74;
-    border-color: #f0bc74;
+    background-color: #05A3F6;
+    border-color: #05A3F6;
 }
 
 .btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
@@ -5582,8 +5582,8 @@ textarea.form-control-lg {
 
 .btn-check:checked + .btn-outline-secondary, .btn-check:active + .btn-outline-secondary, .btn-outline-secondary:active, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show {
     color: #1F2937;
-    background-color: #f0bc74;
-    border-color: #f0bc74;
+    background-color: #05A3F6;
+    border-color: #05A3F6;
 }
 
 .btn-check:checked + .btn-outline-secondary:focus, .btn-check:active + .btn-outline-secondary:focus, .btn-outline-secondary:active:focus, .btn-outline-secondary.active:focus, .btn-outline-secondary.dropdown-toggle.show:focus {
@@ -5591,7 +5591,7 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
-    color: #f0bc74;
+    color: #05A3F6;
     background-color: transparent;
 }
 
@@ -9730,7 +9730,7 @@ textarea.form-control-lg {
 }
 
 .link-secondary {
-    color: #f0bc74;
+    color: #05A3F6;
 }
 
 .link-secondary:hover, .link-secondary:focus {
@@ -10299,7 +10299,7 @@ textarea.form-control-lg {
 }
 
 .border-secondary {
-    border-color: #f0bc74 !important;
+    border-color: #05A3F6 !important;
 }
 
 .border-tertiary {
@@ -24731,7 +24731,7 @@ label {
 }
 
 .breadcrumb-secondary {
-    background: #f0bc74;
+    background: #05A3F6;
 }
 
 .breadcrumb-secondary .breadcrumb-item.active {
@@ -24743,7 +24743,7 @@ label {
 }
 
 .breadcrumb-secondary.breadcrumb-transparent .breadcrumb-item.active {
-    color: #f0bc74;
+    color: #05A3F6;
 }
 
 .breadcrumb-tertiary {
@@ -25419,7 +25419,7 @@ label {
 }
 
 .ct-series-g .ct-grid {
-    stroke: #F8BD7A;
+    stroke: #05A3F6;
     stroke-width: 2px;
     stroke-dasharray: 2px;
 }
@@ -25695,7 +25695,7 @@ label {
 }
 
 .icon-shape-secondary {
-    color: #f0bc74;
+    color: #05A3F6;
     background-color: rgba(240, 188, 116, 0.3);
 }
 
@@ -25995,7 +25995,7 @@ label {
 }
 
 .modal-secondary .modal-title {
-    color: color-yiq(#f0bc74);
+    color: color-yiq(#05A3F6);
 }
 
 .modal-secondary .modal-header,
@@ -26004,12 +26004,12 @@ label {
 }
 
 .modal-secondary .modal-content {
-    background-color: #f0bc74;
-    color: color-yiq(#f0bc74);
+    background-color: #05A3F6;
+    color: color-yiq(#05A3F6);
 }
 
 .modal-secondary .modal-content .heading {
-    color: color-yiq(#f0bc74);
+    color: color-yiq(#05A3F6);
 }
 
 .modal-secondary .close > span:not(.sr-only) {
@@ -26716,16 +26716,16 @@ label {
 }
 
 .popover-secondary {
-    background-color: #f0bc74;
+    background-color: #05A3F6;
 }
 
 .popover-secondary .popover-header {
-    background-color: #f0bc74;
-    color: color-yiq(#f0bc74);
+    background-color: #05A3F6;
+    color: color-yiq(#05A3F6);
 }
 
 .popover-secondary .popover-body {
-    color: color-yiq(#f0bc74);
+    color: color-yiq(#05A3F6);
 }
 
 .popover-secondary .popover-header {
@@ -26733,19 +26733,19 @@ label {
 }
 
 .popover-secondary.bs-popover-top .arrow::after, .popover-secondary.bs-popover-auto[data-popper-placement^=top] .arrow::after {
-    border-top-color: #f0bc74;
+    border-top-color: #05A3F6;
 }
 
 .popover-secondary.bs-popover-end .arrow::after, .popover-secondary.bs-popover-auto[data-popper-placement^=right] .arrow::after {
-    border-right-color: #f0bc74;
+    border-right-color: #05A3F6;
 }
 
 .popover-secondary.bs-popover-bottom .arrow::after, .popover-secondary.bs-popover-auto[data-popper-placement^=bottom] .arrow::after {
-    border-bottom-color: #f0bc74;
+    border-bottom-color: #05A3F6;
 }
 
 .popover-secondary.bs-popover-start .arrow::after, .popover-secondary.bs-popover-auto[data-popper-placement^=left] .arrow::after {
-    border-left-color: #f0bc74;
+    border-left-color: #05A3F6;
 }
 
 .popover-tertiary {
@@ -27517,7 +27517,7 @@ label {
 }
 
 .progress-info .bg-secondary::after {
-    border-top-color: #f0bc74;
+    border-top-color: #05A3F6;
 }
 
 .progress-info .bg-tertiary::after {
@@ -28122,11 +28122,11 @@ code[class*=language-], pre[class*=language-] {
 }
 
 .text-secondary, .text-secondary:hover {
-    color: #f0bc74 !important;
+    color: #05A3F6 !important;
 }
 
 .text-secondary a:not(.btn), .text-secondary h1, .text-secondary h2, .text-secondary h3, .text-secondary h4, .text-secondary h5, .text-secondary h6, .text-secondary .h1, .text-secondary .h2, .text-secondary .h3, .text-secondary .h4, .text-secondary .h5, .text-secondary .h6, .text-secondary .display-1, .text-secondary .display-2, .text-secondary .display-3, .text-secondary .display-4 {
-    color: #f0bc74;
+    color: #05A3F6;
 }
 
 .text-secondary .text-muted {

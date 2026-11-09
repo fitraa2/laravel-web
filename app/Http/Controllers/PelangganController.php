@@ -51,11 +51,12 @@ class PelangganController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
-        $data['dataPelanggan'] = Pelanggan::findOrFail($id);
-        return view('admin.pelanggan.edit', $data);
+        $pelanggan = Pelanggan::where('pelanggan_id', $id)->firstOrFail();
+        return view('admin.pelanggan.edit', compact('pelanggan'));
     }
+
 
     /**
      * Update the specified resource in storage.

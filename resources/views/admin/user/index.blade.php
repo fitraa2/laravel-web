@@ -41,7 +41,7 @@
                                 <tr>
                                     <th class="border-0 rounded-start">Nama</th>
                                     <th class="border-0">Email</th>
-                                    <th class="border-0">Password (Hashed)</th>
+                                    <th class="border-0">Password</th>
                                     <th class="border-0 rounded-end">Action</th>
                                 </tr>
                             </thead>
