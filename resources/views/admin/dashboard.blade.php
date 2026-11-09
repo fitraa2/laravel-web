@@ -3,9 +3,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Primary Meta Tags -->
-    <title>Volt - Free Bootstrap 5 Dashboard</title>
+    <title>Fitra Azzikri</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="title" content="Volt - Free Bootstrap 5 Dashboard">
+    <meta name="title" content="Fitra Azzikri">
     <meta name="author" content="Themesberg">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="120x120"
@@ -53,7 +53,7 @@
                             class="card-img-top rounded-circle border-white" alt="Fitra Azzikri">
                     </div>
                     <div class="d-block">
-                        <h2 class="h5 mb-3">Hi, Jane</h2>
+                        <h2 class="h5 mb-3">Hi, Fitra</h2>
                         <a href="../../pages/examples/sign-in.html"
                             class="btn btn-secondary btn-sm d-inline-flex align-items-center">
                             <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -85,7 +85,7 @@
                             <img src="{{ asset('assets-admin/img/brand/light.svg') }}" height="20" width="20"
                                 alt="Volt Logo">
                         </span>
-                        <span class="mt-1 ms-1 sidebar-text">Volt Overview</span>
+                        <span class="mt-1 ms-1 sidebar-text">Gambaran Umum Volt</span>
                     </a>
                 </li>
                 <li class="nav-item {{ request()->routeIs('dashboard.') ? 'active' : '' }}">
@@ -97,7 +97,7 @@
                                 <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                             </svg>
                         </span>
-                        <span class="sidebar-text">Dashboard</span>
+                        <span class="sidebar-text">Dasbor</span>
                     </a>
                 </li>
                 <li class="nav-item {{ request()->routeIs('pelanggan.*') ? 'active' : '' }}">
@@ -155,7 +155,7 @@
                         <ul class="flex-column nav">
                             <li class="nav-item ">
                                 <a class="nav-link" href="../../pages/tables/bootstrap-tables.html">
-                                    <span class="sidebar-text">Bootstrap Tables</span>
+                                    <span class="sidebar-text">Tabel Bootstrap</span>
                                 </a>
                             </li>
                         </ul>
@@ -251,12 +251,13 @@
                                                         <h4 class="h6 mb-0 text-small">Rakha Adhwa Zayyan</h4>
                                                     </div>
                                                     <div class="text-end">
-                                                        <small class="text-danger">a few moments ago</small>
+                                                        <small class="text-danger">beberapa saat yang lalu</small>
                                                     </div>
                                                 </div>
-                                                <p class="font-small mt-1 mb-0">Added you to an event "Project
+                                                <p class="font-small mt-1 mb-0">Menambahkan Anda ke acara "Projek
                                                     stand-up"
-                                                    tomorrow at 12:30 AM.
+                                                    besok pukul 00.30 WIB
+
                                                 </p>
                                             </div>
                                         </div>
@@ -275,12 +276,12 @@
                                                         <h4 class="h6 mb-0 text-small">Muhammad Rafly Zahran</h4>
                                                     </div>
                                                     <div class="text-end">
-                                                        <small class="text-danger">2 hrs ago</small>
+                                                        <small class="text-danger">2 jam yang lalu</small>
                                                     </div>
                                                 </div>
-                                                <p class="font-small mt-1 mb-0">You've been assigned a task for
-                                                    "Awesome
-                                                    new project".</p>
+                                                <p class="font-small mt-1 mb-0">Anda telah diberi tugas untuk
+                                                    "Proyek baru
+                                                    yang luar biasa".</p>
                                             </div>
                                         </div>
                                     </a>
@@ -400,7 +401,7 @@
                             </path>
                             <path d="M9 13h2v5a1 1 0 11-2 0v-5z"></path>
                         </svg>
-                        Upload Files
+                        Unggah Berkas
                     </a>
                     <a class="dropdown-item d-flex align-items-center" href="#">
                         <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
@@ -444,10 +445,10 @@
                                 <table class="table align-items-center table-flush">
                                     <thead class="thead-light">
                                         <tr>
-                                            <th class="border-bottom" scope="col">Halaman nama</th>
-                                            <th class="border-bottom" scope="col">Halaman Views</th>
+                                            <th class="border-bottom" scope="col">Halaman Nama</th>
+                                            <th class="border-bottom" scope="col">Halaman Tayangan</th>
                                             <th class="border-bottom" scope="col">Halaman Nilai</th>
-                                            <th class="border-bottom" scope="col">Bounce rate</th>
+                                            <th class="border-bottom" scope="col">Tingkat pentalan</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -569,7 +570,7 @@
                     <div class="col-12 col-xxl-6 mb-4">
                         <div class="card border-0 shadow">
                             <div class="card-header border-bottom d-flex align-items-center justify-content-between">
-                                <h2 class="fs-5 fw-bold mb-0">Team members</h2>
+                                <h2 class="fs-5 fw-bold mb-0">Anggota tim</h2>
                                 <a href="#" class="btn btn-sm btn-primary">Lihat semua</a>
                             </div>
                             <div class="card-body">
@@ -709,7 +710,7 @@
                     <div class="col-12 col-xxl-6 mb-4">
                         <div class="card border-0 shadow">
                             <div class="card-header border-bottom d-flex align-items-center justify-content-between">
-                                <h2 class="fs-5 fw-bold mb-0">Progress track</h2>
+                                <h2 class="fs-5 fw-bold mb-0">Lacak kemajuan</h2>
                                 <a href="#" class="btn btn-sm btn-primary">Lihat tugas</a>
                             </div>
                             <div class="card-body">
@@ -752,7 +753,7 @@
                                     <div class="col">
                                         <div class="progress-wrapper">
                                             <div class="progress-info">
-                                                <div class="h6 mb-0">Themesberg - Design System</div>
+                                                <div class="h6 mb-0">Themesberg - Sistem Desain</div>
                                                 <div class="small fw-bold text-gray-500"><span>60 %</span></div>
                                             </div>
                                             <div class="progress mb-0">
@@ -777,7 +778,7 @@
                                     <div class="col">
                                         <div class="progress-wrapper">
                                             <div class="progress-info">
-                                                <div class="h6 mb-0">Homepage Design in Figma</div>
+                                                <div class="h6 mb-0">Desain Halaman Beranda di Figma</div>
                                                 <div class="small fw-bold text-gray-500"><span>45 %</span></div>
                                             </div>
                                             <div class="progress mb-0">
@@ -830,7 +831,7 @@
                                 class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
                             <h4 class="h3">Rakha Adhwa Zayyan</h4>
                             <h5 class="fw-normal">Senior Software Engineer</h5>
-                            <p class="text-gray mb-4">New York, USA</p>
+                            <p class="text-gray mb-4">Dumai</p>
                             <a class="btn btn-sm btn-gray-800 d-inline-flex align-items-center me-2" href="#">
                                 <svg class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -856,7 +857,7 @@
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
-                                        Global Rank
+                                        Peringkat Global
                                     </div>
                                 </div>
                                 <div>
@@ -880,10 +881,10 @@
                                                 d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
-                                        Country Rank
+                                        Peringkat Negara
                                     </div>
                                     <div class="small card-stats">
-                                        United States
+                                        Amerika Serikat
                                         <svg class="icon icon-xs text-success" fill="currentColor"
                                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
@@ -916,10 +917,10 @@
                                                 d="M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z">
                                             </path>
                                         </svg>
-                                        Category Rank
+                                        Peringkat Negara
                                     </div>
                                     <div class="small card-stats">
-                                        Computers Electronics > Technology
+                                        Komputer & Elektronik > Teknologi
                                         <svg class="icon icon-xs text-success" fill="currentColor"
                                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
@@ -946,10 +947,8 @@
                 <div class="col-12 px-0">
                     <div class="card border-0 shadow">
                         <div class="card-body">
-                            <h2 class="fs-5 fw-bold mb-1">Acquisition</h2>
-                            <p>Tells you where your visitors originated from, such as search engines, social networks or
-                                website
-                                referrals.</p>
+                            <h2 class="fs-5 fw-bold mb-1">Perolehan</h2>
+                            <p>Memberi tahu Anda dari mana pengunjung Anda berasal, seperti mesin pencari, jejaring sosial, atau rujukan dari situs web lain.</p>
                             <div class="d-block">
                                 <div class="d-flex align-items-center me-5">
                                     <div class="icon-shape icon-sm icon-shape-danger rounded me-3">
@@ -961,7 +960,7 @@
                                         </svg>
                                     </div>
                                     <div class="d-block">
-                                        <label class="mb-0">Bounce Rate</label>
+                                        <label class="mb-0">Tingkat Pantulan</label>
                                         <h4 class="mb-0">33.50%</h4>
                                     </div>
                                 </div>
@@ -975,7 +974,7 @@
                                         </svg>
                                     </div>
                                     <div class="d-block">
-                                        <label class="mb-0">Sessions</label>
+                                        <label class="mb-0">Sesi</label>
                                         <h4 class="mb-0">9,567</h4>
                                     </div>
                                 </div>

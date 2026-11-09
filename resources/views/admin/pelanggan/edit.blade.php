@@ -34,13 +34,13 @@
                         <div class="row mb-3">
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="mb-3">
-                                    <label for="first_name" class="form-label">First Name</label>
+                                    <label for="first_name" class="form-label">Nama Depan</label>
                                     <input type="text" id="first_name" class="form-control" name="first_name" value="{{ $pelanggan->first_name }}" required>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="mb-3">
-                                    <label for="birthday" class="form-label">Birthday</label>
+                                    <label for="birthday" class="form-label">Hari Ulang Tahun</label>
                                     <input type="date" id="birthday" class="form-control" name="birthday" value="{{ $pelanggan->birthday }}" required>
                                 </div>
                             </div>
@@ -56,13 +56,13 @@
                         <div class="row mb-4">
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="mb-3">
-                                    <label for="last_name" class="form-label">Last Name</label>
+                                    <label for="last_name" class="form-label">Nama Belakang</label>
                                     <input type="text" id="last_name" class="form-control" name="last_name" value="{{ $pelanggan->last_name }}" required>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="mb-3">
-                                    <label for="gender" class="form-label">Gender</label>
+                                    <label for="gender" class="form-label">Jenis Kelamin</label>
                                     <select id="gender" class="form-select" name="gender" required>
                                         <option value="Male" {{ $pelanggan->gender == 'Male' ? 'selected' : '' }}>Male</option>
                                         <option value="Female" {{ $pelanggan->gender == 'Female' ? 'selected' : '' }}>Female</option>
@@ -71,7 +71,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="mb-3">
-                                    <label for="phone" class="form-label">Phone</label>
+                                    <label for="phone" class="form-label">Telepon</label>
                                     <input type="text" id="phone" class="form-control" name="phone" value="{{ $pelanggan->phone }}" required>
                                 </div>
                             </div>

@@ -33,7 +33,7 @@
                         <div class="row mb-3">
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="mb-3">
-                                    <label for="first_name" class="form-label">First Name</label>
+                                    <label for="first_name" class="form-label">Nama Depan</label>
                                     <input type="text" id="first_name" class="form-control" name="first_name" required>
                                 </div>
                             </div>

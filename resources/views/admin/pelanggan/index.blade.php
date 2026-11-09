@@ -39,13 +39,13 @@
                         <table id="table-pelanggan" class="table table-centered table-nowrap mb-0 rounded">
                             <thead class="thead-light">
                                 <tr>
-                                    <th class="border-0">First Name</th>
-                                    <th class="border-0">Last Name</th>
-                                    <th class="border-0">Birthday</th>
-                                    <th class="border-0">Gender</th>
-                                    <th class="border-0">Email</th>
-                                    <th class="border-0">Phone</th>
-                                    <th class="border-0 rounded-end">Action</th>
+                                    <th class="border-0">Nama Depan</th>
+                                    <th class="border-0">Nama Belakang</th>
+                                    <th class="border-0">Hari ulang tahun</th>
+                                    <th class="border-0">Jenis kelamin</th>
+                                    <th class="border-0">E-mail</th>
+                                    <th class="border-0">Telepon</th>
+                                    <th class="border-0 rounded-end">Tindakan</th>
                                 </tr>
                             </thead>
                             <tbody>

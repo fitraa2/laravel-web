@@ -49,7 +49,7 @@
                         <div class="row mb-3">
                             <div class="col-lg-6 col-sm-12">
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Name</label>
+                                    <label for="name" class="form-label">Nama</label>
                                     <input type="text" id="name" class="form-control" name="name" value="{{ old('name') }}" required>
                                 </div>
                                 <div class="mb-3">
@@ -60,11 +60,11 @@
 
                             <div class="col-lg-6 col-sm-12">
                                 <div class="mb-3">
-                                    <label for="password" class="form-label">Password</label>
+                                    <label for="password" class="form-label">Kata Sandi</label>
                                     <input type="password" id="password" class="form-control" name="password" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="password_confirmation" class="form-label">Confirm Password</label>
+                                    <label for="password_confirmation" class="form-label">Konfirmasi Kata Sandi</label>
                                     <input type="password" id="password_confirmation" class="form-control" name="password_confirmation" required>
                                 </div>
                             </div>

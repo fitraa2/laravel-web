@@ -1,17 +1,13 @@
 <?php
-
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\MatakuliahController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuestionController;
-
-
-
 //p6p5
 use App\Http\Controllers\DashboardController;
 //p7p6
 use App\Http\Controllers\PelangganController;
-//p9p8
+//p9p8 uts CRUD
 use App\Http\Controllers\CvController;
 //p10p9
 use App\Http\Controllers\UserController;
