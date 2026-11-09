@@ -4,11 +4,17 @@ use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\MatakuliahController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\CvController;
+
 //p6p5
 use App\Http\Controllers\DashboardController;
 //p7p6
 use App\Http\Controllers\PelangganController;
+//p10p9
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -53,6 +59,12 @@ Route::get('dashboard', [DashboardController::class, 'index'])
 
 //p7p6r
 Route::resource('pelanggan', PelangganController::class);
+
+//uts p9p8 - CV (index, create, store, show, edit, update, destroy)
+// Route::resource('cv', CvController::class)->parameters(['cv' => 'biodata']);
+
+//p10p9
+Route::resource('user', UserController::class);
 
 Route::get('/about', function () {
     return view('halaman-about');
